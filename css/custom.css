@@ -1,0 +1,17 @@
+:root {
+    --danger: #dc3545;
+}
+
+.bg-dark {
+    background-color: #04091e !important;
+}
+
+body {
+    margin-top: 70px;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+
