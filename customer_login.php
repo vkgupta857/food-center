@@ -13,7 +13,7 @@
 <body>
     <?php include('includes/header.php'); ?>
     <section class="container">
-        <div class="col-md-6 offset-md-3" id="contact">
+        <div class="col-md-6 offset-md-3">
             <?php if($_GET['msg'] && $_GET['type']){ ?>
             <div class="alert alert-<?php echo $_GET['type']; ?> alert-dismissible text-center overflow-auto">
                 <?php echo $_GET['msg']; ?>
@@ -35,7 +35,7 @@
                         </div>
                         <div class="form-group">
                             <label for="password">Password</label>
-                            <input id="city" class="form-control form-control-sm" name="password"
+                            <input id="password" class="form-control form-control-sm" name="password"
                                 placeholder="Enter password" type="password" required>
                         </div>
                         <div class="form-group text-center">

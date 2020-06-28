@@ -20,7 +20,20 @@
                     </li>
                 </ul>
                 <ul class="navbar-nav ml-auto">
-                    <?php if(!isset($_SESSION['cust_email'])) { ?>
+                    <!-- Options for customer -->
+                    <?php if(isset($_SESSION['cust_email'])) { ?>
+                    <li class="nav-item">
+                        <a href="logout.php" class="nav-link">Logout</span></a>
+                    </li>
+
+                    <!-- Options for restaurant -->
+                    <?php } elseif(isset($_SESSION['rest_email'])) { ?>
+                    <li class="nav-item">
+                        <a href="logout.php" class="nav-link">Logout</span></a>
+                    </li>
+
+                    <!-- Options for Anonymous -->
+                    <?php } else { ?>
                     <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Sign Up</span></a>
                         <div class="dropdown-menu" aria-labelledby="dropdown01">
@@ -34,10 +47,6 @@
                             <a class="dropdown-item" href="restaurant_login.php">Restaurant</a>
                             <a class="dropdown-item" href="customer_login.php">Customer</a>
                         </div>
-                    </li>
-                    <?php } else { ?>
-                    <li class="nav-item">
-                        <a href="logout.php" class="nav-link">Logout</span></a>
                     </li>
                     <?php } ?>
                 </ul>
