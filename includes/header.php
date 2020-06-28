@@ -8,30 +8,38 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navbar">
-                <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
                         <a href="index.php" class="nav-link">Home</span></a>
                     </li>
                     <li class="nav-item">
                         <a href="about.php" class="nav-link">About</span></a>
                     </li>
+                    <li class="nav-item">
+                        <a href="contact.php" class="nav-link">Contact</span></a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <?php if(!isset($_SESSION['cust_email'])) { ?>
                     <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Sign Up</span></a>
                         <div class="dropdown-menu" aria-labelledby="dropdown01">
-                            <a class="dropdown-item" href="register_restaurant.php">Restaurant</a>
-                            <a class="dropdown-item" href="register_customer.php">Customer</a>
+                            <a class="dropdown-item" href="restaurant_register.php">Restaurant</a>
+                            <a class="dropdown-item" href="customer_register.php">Customer</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Login</span></a>
                         <div class="dropdown-menu" aria-labelledby="dropdown01">
-                            <a class="dropdown-item" href="login_restaurant.php">Restaurant</a>
-                            <a class="dropdown-item" href="login_customer.php">Customer</a>
+                            <a class="dropdown-item" href="restaurant_login.php">Restaurant</a>
+                            <a class="dropdown-item" href="customer_login.php">Customer</a>
                         </div>
                     </li>
+                    <?php } else { ?>
                     <li class="nav-item">
-                        <a href="contact.php" class="nav-link">Contact</span></a>
-                    </li>                    
+                        <a href="logout.php" class="nav-link">Logout</span></a>
+                    </li>
+                    <?php } ?>
                 </ul>
             </div>
         </div>

@@ -13,6 +13,12 @@
     <?php include_once('includes/header.php'); ?>
     <section>
         <div class="container">
+            <?php if($_GET['msg'] && $_GET['type']){ ?>
+            <div class="alert alert-<?php echo $_GET['type']; ?> alert-dismissible text-center overflow-auto">
+                <?php echo $_GET['msg']; ?>
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+            </div>
+            <?php } ?>
         </div>
     </section>
 
