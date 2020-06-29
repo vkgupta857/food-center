@@ -1,3 +1,11 @@
+<?php 
+session_start();
+if(isset($_SESSION['cust_email'])){
+    header("location: customer_home.php");
+} elseif(isset($_SESSION['rest_email'])) {
+    header("location: restaurant_home.php");
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 

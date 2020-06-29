@@ -1,3 +1,11 @@
+<?php 
+session_start();
+if(isset($_SESSION['cust_email'])){
+    header("location: customer_home.php");
+} elseif(isset($_SESSION['rest_email'])) {
+    header("location: restaurant_home.php");
+}
+?>
 <!DOCTYPE html>
 <html>
 
@@ -28,7 +36,7 @@
                     <hr>
                     <form method="post" action="customer_login_submit.php">
                         <div class="form-group">
-                            <label for="email">Email ID</label>
+                            <label for="email">Email</label>
                             <input id="email" class="form-control form-control-sm" name="email"
                                 placeholder="Enter Email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"
                                 type="email" required>
@@ -44,7 +52,7 @@
                     </form>
                 </div>
                 <div class="card-footer text-center">
-                    Not registered yet. <a title="Customer Login" href="customer_register.php">Register here</a>
+                    Not registered yet? <a title="Customer Login" href="customer_register.php">Register here</a>
                 </div>
             </div>
         </div>
