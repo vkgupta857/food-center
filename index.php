@@ -1,3 +1,11 @@
+<?php 
+session_start();
+if(isset($_SESSION['cust_email'])){
+    header("location: customer_home.php");
+} elseif(isset($_SESSION['rest_email'])) {
+    header("location: restaurant_home.php");
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -24,9 +32,6 @@
 
     <section>
         <div class="container">
-            <div class="alert alert-primary text-center">
-                This project is submitted to fulfill the assisgnment required for web dev role as Internshala
-            </div>
             <div class="row">
                 <div class="col-md-6">
                     <h5>Technology Stack</h5>

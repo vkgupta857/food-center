@@ -10,9 +10,6 @@
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a href="index.php" class="nav-link">Home</span></a>
-                    </li>
-                    <li class="nav-item">
                         <a href="about.php" class="nav-link">About</span></a>
                     </li>
                     <li class="nav-item">
@@ -23,11 +20,17 @@
                     <!-- Options for customer -->
                     <?php if(isset($_SESSION['cust_email'])) { ?>
                     <li class="nav-item">
+                        <a href="customer_home.php" class="nav-link">Home</span></a>
+                    </li>
+                    <li class="nav-item">
                         <a href="logout.php" class="nav-link">Logout</span></a>
                     </li>
 
                     <!-- Options for restaurant -->
                     <?php } elseif(isset($_SESSION['rest_email'])) { ?>
+                    <li class="nav-item">
+                        <a href="restaurant.php" class="nav-link">Home</span></a>
+                    </li>
                     <li class="nav-item">
                         <a href="add_menu_item.php" class="nav-link">Add Menu Item</span></a>
                     </li>
