@@ -29,6 +29,9 @@
                     <!-- Options for restaurant -->
                     <?php } elseif(isset($_SESSION['rest_email'])) { ?>
                     <li class="nav-item">
+                        <a href="add_menu_item.php" class="nav-link">Add Menu Item</span></a>
+                    </li>
+                    <li class="nav-item">
                         <a href="logout.php" class="nav-link">Logout</span></a>
                     </li>
 
