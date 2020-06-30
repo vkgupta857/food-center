@@ -100,7 +100,7 @@ if($stmt->execute()){
                             </thead>
                             <tbody>
                                 <?php
-                        $stmt2 = $con->prepare("Select * from orders where ordered_from = ? ");
+                        $stmt2 = $con->prepare("Select * from orders o,menu_items m where o.ordered_from = ? && m.item_id = o.item_id ");
                         $stmt2->bind_param("i",$rest_id);
                         if($stmt2->execute()){
                             $result2 = $stmt2->get_result();
@@ -108,7 +108,7 @@ if($stmt->execute()){
                                 <tr>
                                     <td><?php echo $row2['item_name']; ?></td>
                                     <td><?php echo "Rs.".$row2['item_price']; ?></td>
-                                    <td><?php echo '<a href="delete_menu_item.php?item_id='.$row2['item_id'].'" title="Delete this Item">Delete this item</a>'; ?>
+                                    <td><?php echo '<a href="#" title="Delete this Item">Delete this item</a>'; ?>
                                     </td>
                                 </tr>
                                 <?php }
