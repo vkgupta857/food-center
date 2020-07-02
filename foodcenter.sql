@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jul 02, 2020 at 10:45 AM
+-- Generation Time: Jul 02, 2020 at 11:24 AM
 -- Server version: 5.7.30-0ubuntu0.18.04.1
 -- PHP Version: 7.2.24-0ubuntu0.18.04.6
 
@@ -61,7 +61,7 @@ CREATE TABLE `customers` (
 --
 
 INSERT INTO `customers` (`cust_id`, `cust_email`, `cust_name`, `cust_mobile`, `cust_city`, `cust_password_hash`) VALUES
-(6, 'cust@example.com', 'Sample Customer', '9479475120', 'Mumbai', 'ddac418a1be76098d01107464026f65d2a3192bf');
+(6, 'cust@example.com', 'Sample Customer', '9876543210', 'Mumbai', 'ddac418a1be76098d01107464026f65d2a3192bf');
 
 -- --------------------------------------------------------
 
@@ -128,7 +128,7 @@ CREATE TABLE `restaurants` (
 --
 
 INSERT INTO `restaurants` (`rest_id`, `rest_name`, `rest_mobile`, `rest_email`, `rest_addr`, `rest_city`, `rest_password_hash`) VALUES
-(4, 'ABC Restaurant', '9479475120', 'rest@example.com', 'ABC Building', 'Mumbai', 'ddac418a1be76098d01107464026f65d2a3192bf');
+(4, 'ABC Restaurant', '9876543210', 'rest@example.com', 'ABC Building', 'Mumbai', 'ddac418a1be76098d01107464026f65d2a3192bf');
 
 --
 -- Indexes for dumped tables
