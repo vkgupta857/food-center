@@ -12,7 +12,7 @@ if(isset($_SESSION['cust_email'])){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome - Foodshala</title>
+    <title>Welcome - FoodCenter</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/custom.css">
 </head>
@@ -60,22 +60,18 @@ if(isset($_SESSION['cust_email'])){
                     <ul>
                         <li>HTML/CSS/JS</li>
                         <li>Bootstrap 4.4</li>
-                        <li>PHP</li>
-                        <li>MySQL</li>
+                        <li>PHP 7</li>
+                        <li>MySQL 5.7</li>
                     </ul>
                 </div>
                 <div class="col-md-6">
                     <h5>Requirements to run/interact properly</h5>
                     <ul>
-                        <li>Create database using MySQL dump with name <code>foodshala.sql</code></li>
-                        <li>A restaurant with name <code>Vicky Bakery</code> with Email <code>rest@example.com</code> and password <code>abc@123</code> has already been created.</li>
+                        <li>Create database using MySQL dump with name <code>foodcenter.sql</code></li>
+                        <li>Add database credentials in <code>includes/db_con.php</code></li>
+                        <li>A restaurant with name <code>ABC Restauarant</code> with Email <code>rest@example.com</code> and password <code>abc@123</code> has already been created.</li>
                         <li>A customer with Email <code>cust@example.com</code> and password <code>abc@123</code> has already been created.</li>
                     </ul>
-                </div>
-            </div>
-            <div class="card bg-light">
-                <div class="card-body text-center">
-                    <h5>Developed by Vinod Kumar Gupta to fulfill Assignment requirement for a role at Internshala</h5>
                 </div>
             </div>
         </div>

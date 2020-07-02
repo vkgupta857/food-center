@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jun 30, 2020 at 11:54 AM
+-- Generation Time: Jul 02, 2020 at 10:45 AM
 -- Server version: 5.7.30-0ubuntu0.18.04.1
 -- PHP Version: 7.2.24-0ubuntu0.18.04.6
 
@@ -17,7 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `foodshala`
+-- Database: `foodcenter`
 --
 
 -- --------------------------------------------------------
@@ -128,7 +128,7 @@ CREATE TABLE `restaurants` (
 --
 
 INSERT INTO `restaurants` (`rest_id`, `rest_name`, `rest_mobile`, `rest_email`, `rest_addr`, `rest_city`, `rest_password_hash`) VALUES
-(4, 'Vicky Bakery', '9479475120', 'rest@example.com', 'ABC Building', 'Mumbai', 'ddac418a1be76098d01107464026f65d2a3192bf');
+(4, 'ABC Restaurant', '9479475120', 'rest@example.com', 'ABC Building', 'Mumbai', 'ddac418a1be76098d01107464026f65d2a3192bf');
 
 --
 -- Indexes for dumped tables

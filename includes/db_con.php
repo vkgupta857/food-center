@@ -2,7 +2,7 @@
 $host = "localhost";
 $username = "vinod";
 $password = "password";
-$db_name = "foodshala";
+$db_name = "foodcenter";
 
 $con = new mysqli($host,$username,$password,$db_name);
 

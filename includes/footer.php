@@ -5,7 +5,7 @@
             &copy;
             <script>
             document.write(new Date().getFullYear());
-            </script> FoodShala. <code>< Developed by Vinod Kumar Gupta ></code>. Resposive for
+            </script> FoodCenter. <code>< Developed by Vinod Kumar Gupta ></code>. Resposive for
             mobile devices.
             <a href="#" class="ml-md-4">Back to top</a>
         </p>

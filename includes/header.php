@@ -1,7 +1,7 @@
 <header>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <div class="container">
-            <a href="index.php" class="navbar-brand">FoodShala</a>
+            <a href="index.php" class="navbar-brand">FoodCenter</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"
                 aria-controls="Menu" aria-expanded="false" aria-label="navigation">
                 <span class="navbar-toggler-icon"></span>
